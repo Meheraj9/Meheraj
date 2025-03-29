@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MEZOR AI NET - Experience cutting-edge AI technology for a smarter tomorrow.">
+    <meta name="keywords" content="AI, Artificial Intelligence, MEZOR AI, Future Technology, Bangladesh First AI">
+    <meta property="og:title" content="MEZOR AI - FUTURE OF INTELLIGENCE">
+    <meta property="og:description" content="Experience cutting-edge AI technology for a smarter tomorrow.">
+    <meta property="og:image" content="https://example.com/mezor-ai-logo.png">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEZOR AI - FUTURE OF INTELLIGENCE">
+    <meta name="twitter:description" content="Experience cutting-edge AI technology for a smarter tomorrow.">
+    <meta name="twitter:image" content="https://example.com/mezor-ai-logo.png">
+    <title>MEZOR AI NET - FUTURE OF INTELLIGENCE</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://example.com">
+    <link rel="sitemap" type="application/xml" href="https://example.com/sitemap.xml">
+    <style>
+        :root {
+            --primary-color: #00ffcc; /* Cyan */
+            --secondary-color: #ff6f00; /* Orange */
+            --background-color: #0d0d0d; /* Dark background */
+            --text-color: #e0e0e0; /* Light gray */
+            --font-primary: 'Roboto', sans-serif;
+            --font-secondary: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary), sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(13, 13, 13, 0.9);
+            color: var(--primary-color);
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+            color: var(--text-color);
+            text-align: center;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px rgba(255, 111, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button-group {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #000;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+            flex: 1 1 auto;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+        }
+
+        .features, .testimonials, .contact, .bangladesh-ai, .article, .image-generator, .video-downloader, .search-engine {
+            margin-top: 50px;
+        }
+
+        .feature-item, .testimonial-item, .bangladesh-ai-item, .article-item, .image-generator .feature-item, .video-downloader .feature-item, .search-engine .feature-item {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+            transition: 0.3s;
+        }
+
+        .feature-item:hover, .testimonial-item:hover, .bangladesh-ai-item:hover, .article-item:hover, .image-generator .feature-item:hover, .video-downloader .feature-item:hover, .search-engine .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+        }
+
+        .testimonial-item {
+            text-align: left;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+        }
+
+        .bangladesh-ai-item {
+            text-align: left;
+        }
+
+        .bangladesh-ai-item h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .article-item {
+            text-align: left;
+        }
+
+        .article-item h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            background: rgba(30, 30, 30, 0.9);
+            color: var(--text-color);
+            font-family: var(--font-primary), sans-serif;
+        }
+
+        .contact-form input::placeholder, .contact-form textarea::placeholder {
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        .contact-form button {
+            padding: 15px 35px;
+            font-size: 20px;
+            color: #000;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.8);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(13, 13, 13, 0.9);
+            color: var(--primary-color);
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            position: relative;
+            bottom: 0;
+            box-shadow: 0 -4px 15px rgba(0, 255, 204, 0.2);
+        }
+
+        .developer-info {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            h2 { font-size: 28px; }
+            .container { padding: 20px; }
+            .cta-button { padding: 10px 20px; font-size: 16px; flex: 1 1 100%; margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        MEZOR AI
+    </header>
+    <main>
+        <div class="container">
+            <h1>WELCOME TO MEZOR AI</h1>
+            <p>EXPERIENCE CUTTING-EDGE AI TECHNOLOGY FOR A SMARTER TOMORROW.</p>
+            <div class="button-group">
+                <a href="https://mezorai.great-site.net/ai.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Explore MEZOR AI (opens in new tab)">
+                    MEZOR CHATBOT
+                </a>
+                <a href="https://mezorai.great-site.net/search.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Try MEZOR Search Engine (opens in new tab)">
+                    MEZOR SEARCH ENGINE
+                </a>
+                <a href="https://mezorai.great-site.net/image.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Try MEZOR AI Image Generator (opens in new tab)">
+                    IMAGE GENERATOR
+                </a>
+                <a href="https://mezorai.great-site.net/download.php/" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Try MEZOR AI Video Downloader (opens in new tab)">
+                    VIDEO DOWNLOADER
+                </a>
+                <a href="https://mezorai.great-site.net/info.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Convert Free Fire UID to Profile Info (opens in new tab)">
+                    FF UID TO INFO
+                </a>
+                <!-- New Buttons -->
+                <a href="https://mezorai.great-site.net/visit.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Get 500 Free Fire Profile Visits via UID (opens in new tab)">
+                    FREE FIRE 500 PROFILE VISIT UID
+                </a>
+                <a href="https://mezorai.great-site.net/like.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Get 100 Free Fire Likes (opens in new tab)">
+                    FREE FIRE 100 LIKE FREE
+                </a>
+                <a href="https://mezorai.great-site.net/privacy-policy.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Read Privacy Policy (opens in new tab)">
+                    PRIVACY POLICY
+                </a>
+                <a href="https://nali.serv00.net/inbxkllr.php" class="cta-button" target="_blank" rel="noopener noreferrer" aria-label="Get 100 Free Fire Likes (opens in new tab)">
+                    SMS BOMBER 
+                </a>
+                <a
+ 
+                <div class="button-group">
+    <!-- Existing buttons... -->
+    
+    <a href="https://tools.freefireinfo.in/tonightupdate.php" 
+       class="cta-button" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Check Free Fire upcoming events (opens in new tab)">
+        FREE FIRE NEXT UPCOMING EVENT
+    </a>
+</div>
+            </div>
+        </div>
+
+        <!-- Bangladesh's First AI Section -->
+        <div class="container bangladesh-ai">
+            <h2>BANGLADESH'S FIRST AI</h2>
+            <div class="bangladesh-ai-item">
+                <h3>Pioneering AI in Bangladesh</h3>
+                <p>MEZOR AI is proud to be the first artificial intelligence developed in Bangladesh, marking a significant milestone in the country's technological advancement. Our AI is designed to empower businesses and individuals with cutting-edge solutions tailored to local and global needs.</p>
+            </div>
+            <div class="bangladesh-ai-item">
+                <h3>Why Choose MEZOR AI?</h3>
+                <ul>
+                    <li>Built by Bangladeshi developers for the world.</li>
+                    <li>Optimized for local languages and cultural contexts.</li>
+                    <li>Affordable and scalable solutions for businesses of all sizes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- New Article Section -->
+        <div class="container article">
+            <h2>MEZOR AI: THE FIRST BANGLADESHI AI</h2>
+            <div class="article-item">
+                <h3>Revolutionizing Technology in Bangladesh</h3>
+                <p>MEZOR AI is a groundbreaking achievement for Bangladesh, representing the country's first fully functional artificial intelligence system. Developed by a team of talented Bangladeshi engineers and data scientists, MEZOR AI is designed to address local challenges while competing on a global scale.</p>
+                <p>With a focus on innovation, MEZOR AI leverages advanced machine learning algorithms, natural language processing, and real-time analytics to deliver solutions that are both powerful and accessible. From healthcare to education, MEZOR AI is transforming industries and empowering communities across Bangladesh.</p>
+            </div>
+            <div class="article-item">
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>First AI system developed entirely in Bangladesh.</li>
+                    <li>Supports multiple local languages, including Bangla.</li>
+                    <li>Used by over 100 businesses and institutions nationwide.</li>
+                    <li>Recognized internationally for innovation and impact.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="container features">
+            <h2>OUR FEATURES</h2>
+            <div class="feature-item">
+                <h3>Advanced Machine Learning</h3>
+                <p>Harness the power of state-of-the-art algorithms to solve complex problems.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Real-Time Analytics</h3>
+                <p>Get instant insights with our real-time data processing capabilities.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Scalable Solutions</h3>
+                <p>Our AI solutions grow with your business, ensuring long-term success.</p>
+            </div>
+        </div>
+
+        <!-- Image Generator Section -->
+        <div class="container image-generator">
+            <h2>AI IMAGE GENERATOR</h2>
+            <div class="feature-item">
+                <h3>Create Stunning Images with AI</h3>
+                <p>Generate high-quality images using MEZOR AI's advanced image generation technology. Perfect for designers, marketers, and content creators.</p>
+                <a href="https://mezorai.great-site.net/mezor-ai-image-generator/" class="cta-button" target="_blank" aria-label="Try MEZOR AI Image Generator">
+                    TRY IMAGE GENERATOR
+                </a>
+            </div>
+        </div>
+
+        <!-- Video Downloader Section -->
+        <div class="container video-downloader">
+            <h2>VIDEO DOWNLOADER</h2>
+            <div class="feature-item">
+                <h3>Download Videos Easily</h3>
+                <p>Download videos from various platforms quickly and securely with MEZOR AI's video downloader tool.</p>
+                <a href="https://mezorai.great-site.net/video-downloader/" class="cta-button" target="_blank" aria-label="Try MEZOR AI Video Downloader">
+                    TRY VIDEO DOWNLOADER
+                </a>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="container testimonials">
+            <h2>WHAT OUR USERS SAY</h2>
+            <div class="testimonial-item">
+                <p>"MEZOR AI transformed our business operations. Highly recommended!"</p>
+                <p><strong>- John Doe, CEO of TechCorp</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"The real-time analytics feature is a game-changer for our team."</p>
+                <p><strong>- Jane Smith, Data Scientist</strong></p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="container contact">
+            <h2>CONTACT US</h2>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+            <div class="developer-info">
+                <p>Developed by <strong>Meheraj Islam Mezor</strong></p>
+                <p>Contact Email: <a href="mailto:meheraj9926@gmail.com">meheraj9926@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 MEZOR AI
+    </footer>
+</body>
+</html>
